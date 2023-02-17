@@ -799,31 +799,30 @@
 
 
 
-  <div id="giteement-ctn"></div>
+
   
-    <link rel="stylesheet" href="/lib/default.css">
-    <script src="/lib/giteement.browser.js"></script>
+  <div id="gitment-ctn"></div>
+  
+    <!-- 中文 -->
+    <link rel="stylesheet" href="/lib/gitment.css">
+    <script src="/lib/gitment.js"></script>
   
   <script>
-  <!-- id: "Less" -->
-  var giteement = new Giteement({
-    id: '20230216224152',
-    owner: 'mu-ce',
-    repo: 'bkpl',
-    backcall_uri: 'https://clear-liquid.github.io',
-    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
-    oauth: {
-      client_id: '51dadf240ad0fb14a054eff2fa627a54d418eea3b0af2b8ca1f90e4136c1d004',
-      client_secret: '4c8f07756a813bab76624ac632ee447b216fc63a054858ad0b0673237421e8d5'
-    },
-  })
-  giteement.render('giteement-ctn')
+    <!-- id: "Less" -->
+    var gitment = new Gitment({
+      id: "20230216224152",
+      owner: 'clear-liquid',
+      repo: 'bkpl',
+      oauth: {
+        client_id: '272dee91078f37694b25',
+        client_secret: 'b71e270b9c5ee11b88952c1ec379f986381e74f6',
+      },
+    })
+    gitment.render('gitment-ctn')
   </script>
 
 
-
-
-
+  
 
 
 
