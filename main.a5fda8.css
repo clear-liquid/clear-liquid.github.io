@@ -595,7 +595,7 @@ html {
 #container {
   position: relative;
   min-height: 100%;
-  background: linear-gradient(200deg,#a0cfe4,#e8c37e) !important;
+  background: linear-gradient(200deg, #a0cfe4, #e8c37e) !important;
 }
 #container .anm-canvas {
   display: none;
@@ -644,7 +644,6 @@ html {
   position: absolute;
 }
 .left-col .intrude-less {
-  
   width: 76%;
   text-align: center;
   margin: 112px auto 0;
@@ -1386,7 +1385,8 @@ pre .id {
   margin: 0 30px;
   padding-right: 60px;
   border-bottom: 1px solid #eee;
-  background: #fff;
+  /* background:linear-gradient(-90deg, #29bdd9 0%, #276ace 100%); */
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
 }
 .archives-wrap:first-child {
   margin-top: 30px;
@@ -1767,10 +1767,9 @@ pre .id {
   background: transparent;
   transition: all 0.2s ease-in;
 }
-.article-index:hover{
+.article-index:hover {
   transform: scale(1.005);
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.2)
-
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .article img {
@@ -3500,4 +3499,65 @@ a.pswp__share--download:hover {
 .pswp__error-msg a {
   color: #ccc;
   text-decoration: underline;
+}
+
+category-all-page {
+  margin: 30px 40px 30px 40px;
+  position: relative;
+  min-height: 70vh;
+}
+.category-all-page h2 {
+  margin: 20px 0;
+}
+.category-all-page .category-all-title {
+  text-align: center;
+}
+.category-all-page .category-all {
+  margin-top: 20px;
+}
+.category-all-page .category-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.category-all-page .category-list-item-list-item {
+  margin: 10px 15px;
+}
+.category-all-page .category-list-item-list-count {
+  color: $grey;
+}
+.category-all-page .category-list-item-list-count:before {
+  display: inline;
+  content: " (";
+}
+.category-all-page .category-list-item-list-count:after {
+  display: inline;
+  content: ") ";
+}
+.category-all-page .category-list-item {
+  margin: 10px 10px;
+}
+.category-all-page .category-list-count {
+  color: $grey;
+}
+.category-all-page .category-list-count:before {
+  display: inline;
+  content: " (";
+}
+.category-all-page .category-list-count:after {
+  display: inline;
+  content: ") ";
+}
+.category-all-page .category-list-child {
+  padding-left: 10px;
+}
+
+.aplayer
+{
+  background-color: transparent !important;
+}
+
+.aplayer .aplayer-lrc::after,
+.aplayer .aplayer-lrc::before {
+  display: none !important;
 }
