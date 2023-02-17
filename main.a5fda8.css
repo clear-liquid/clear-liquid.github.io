@@ -612,6 +612,8 @@ html {
   right: 0;
   min-height: 100%;
   background: transparent;
+  /* background: url(./img/0f5f453e31279d60a667bc934ee49751.jpg) no-repeat;
+  background-size: cover; */
   left: 300px;
   width: auto;
 }
@@ -624,6 +626,8 @@ html {
 }
 .left-col {
   /* background: #fff; */
+  /* background: url(./img/0f5f453e31279d60a667bc934ee49751.jpg) no-repeat;
+  background-size: cover; */
   background: transparent;
   width: 300px;
   position: fixed;
@@ -3556,7 +3560,9 @@ category-all-page {
 {
   background-color: transparent !important;
 }
-
+.aplayer .aplayer-list ol li{
+  border: none !important;
+}
 .aplayer .aplayer-lrc::after,
 .aplayer .aplayer-lrc::before {
   display: none !important;
