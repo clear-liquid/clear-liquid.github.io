@@ -196,16 +196,16 @@
 							<nav class="header-menu">
 								<ul>
 									
-										<li><a href="/" 
+										<li><a href="/" target="_blank"
 													>主页</a></li>
 										
-										<li><a href="/categories" 
+										<li><a href="/categories" target="_blank"
 													>分类</a></li>
 										
-										<li><a target="_blank" rel="noopener" href="https://zhousiwei.gitee.io/ibooks/" 
+										<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank"
 													>技术笔记</a></li>
 										
-										<li><a href="/tags/%E9%9A%8F%E7%AC%94/" 
+										<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank"
 													>随笔</a></li>
 										
 								</ul>
@@ -229,33 +229,41 @@
 								<div class="social">
 									
 										
-											<a class="github" target="_blank" rel="noopener" href="https://github.com/clear-liquid"
+											<a class="github" href="https://github.com/clear-liquid"
 												title="GitHub"
-												>
+												target="_blank">
 												<i class="icon-github "></i>
 											</a>
 											
 												
 										
-											<a class="gitee" target="_blank" rel="noopener" href="https://gitee.com/mu-ce"
+											<a class="gitee" href="https://gitee.com/mu-ce"
 												title="码云"
-												>
+												target="_blank">
 												<i class="icon-gitee "></i>
 											</a>
 											
 												
 										
-											<a class="yuque" target="_blank" rel="noopener" href="https://www.yuque.com/dashboard"
+											<a class="yuque" href="https://www.yuque.com/dashboard"
 												title="subNav.title.yuque"
-												>
+												target="_blank">
 												<i class="icon-yuque "></i>
+											</a>
+											
+												
+										
+											<a class="weixin" href="/img/weixin_.png"
+												title="微信"
+												target="_blank">
+												<i class="icon-weixin "></i>
 											</a>
 											
 												
 										
 											<a class="mail" href="mailto:2374044812@qq.com"
 												title="邮件联系"
-												>
+												target="_blank">
 												<i class="icon-mail "></i>
 											</a>
 											
@@ -345,6 +353,11 @@
 						
 						<a class="yuque" target="_blank" 
 							href="https://www.yuque.com/dashboard" title="subNav.title.yuque"><i class="icon-yuque"></i></a>
+						
+					
+						
+						<a class="weixin" target="_blank" 
+							href="/img/weixin_.png" title="微信"><i class="icon-weixin"></i></a>
 						
 					
 						
@@ -2335,14 +2348,15 @@ C组件: 读取A组件传入的数据显示 &#123;this.props.data&#125;
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">框架</a>
-        		</li>
-      		
+			
+				<li class="article-tag-list-item">
+					<a href="javascript:void(0)"
+						class="js-tag article-tag-list-link color3">框架</a>
+				</li>
+				
 		</ul>
 	</div>
-
+	
     
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
@@ -2528,11 +2542,11 @@ C组件: 读取A组件传入的数据显示 &#123;this.props.data&#125;
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: true
+		showTags: false
 	}
 </script>
 
@@ -2609,15 +2623,7 @@ C组件: 读取A组件传入的数据显示 &#123;this.props.data&#125;
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ts</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">样式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2625,11 +2631,15 @@ C组件: 读取A组件传入的数据显示 &#123;this.props.data&#125;
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">结构+样式</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">vue3</a>
+                <a href="javascript:void(0)" class="js-tag color3">ts</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">结构+样式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2637,15 +2647,19 @@ C组件: 读取A组件传入的数据显示 &#123;this.props.data&#125;
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">vue3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">vue2</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color5">vue2</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2891,7 +2905,7 @@ C组件: 读取A组件传入的数据显示 &#123;this.props.data&#125;
     display: {
        position: "right", 
        width: 145, 
-       height: 315, 
+       height: 320, 
        hOffset: 50, 
       
     },
@@ -2900,7 +2914,7 @@ C组件: 读取A组件传入的数据显示 &#123;this.props.data&#125;
        scale: 0.6 
     },
     react: {
-       opacity: 0.8 
+       opacity: 1 
     }
   })
 
